@@ -66,11 +66,11 @@
 // |       |     |     |      |      |      |        |  |       |      |       |       |      |       |       |
 //                     |      |      |      |        |  |       |      |       |       |
 			bindings = <
-&trans &trans &trans &trans &trans &trans                         &trans     &trans       &kp C_PP     &trans     &trans &trans
-&trans &trans &trans &trans &trans &trans                         &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &trans &trans
-&trans &trans &trans &trans &trans &trans                         &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT  &trans &trans
-&trans &trans &trans &trans &trans &trans &trans  &trans   &trans &trans     &trans       &trans     &trans &trans
-                     &trans &trans &trans &trans  &trans   &trans &kp DEL    &trans
+&trans     &trans &trans &trans &trans &trans                    &trans     &trans       &kp C_PP     &trans     &trans &trans
+&trans     &trans &trans &trans &trans &trans                    &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &trans &trans
+&trans     &trans &trans &trans &trans &trans                    &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT  &trans &trans
+&trans     &trans &trans &trans &trans &trans &trans      &trans &trans     &trans       &trans       &trans     &trans &trans
+                         &trans &trans &trans &trans      &trans &trans     &kp DEL      &trans
 			>;
 		};
 		bluetooth_layer {
@@ -88,5 +88,6 @@
                                      &trans       &trans       &trans       &trans   &trans &trans &trans &trans
 			>;
 		};
+
 	};
 };
