@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
 #define LOWER 1
@@ -75,17 +76,17 @@
 		};
 		bluetooth_layer {
 // ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |       |     |     |      |      |      |        |  |       |      |       |       |      |       |       |
-//                     |      |      |      |        |  |       |      |       |       |
+// | BTCLR | BT1 | BT2 |  BT3 |  BT4 | OUT_BLE |                   | OUT_USB |       |       |      |       |       |
+// |       |     |     |      |      |         |                   |         |       |       |      |       |       |
+// |       |     |     |      |      |         |                   |         |       |       |      |       |       |
+// |       |     |     |      |      |         |        |  |       |         |       |       |      |       |       |
+//                     |      |      |         |        |  |       |         |       |       |
 			bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 &trans &trans &trans &trans &trans &trans
-&trans     &trans       &trans       &trans       &trans       &trans                       &trans &trans &trans &trans &trans &trans
-&trans     &trans       &trans       &trans       &trans       &trans                       &trans &trans &trans &trans &trans &trans
-&trans     &trans       &trans       &trans       &trans       &trans       &trans   &trans &trans &trans &trans &trans &trans &trans
-                                     &trans       &trans       &trans       &trans   &trans &trans &trans &trans
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &out OUT_BLE                 &out OUT_USB &trans &trans &trans &trans &trans
+&trans     &trans       &trans       &trans       &trans       &trans                       &trans       &trans &trans &trans &trans &trans
+&trans     &trans       &trans       &trans       &trans       &trans                       &trans       &trans &trans &trans &trans &trans
+&trans     &trans       &trans       &trans       &trans       &trans       &trans   &trans &trans       &trans &trans &trans &trans &trans
+                                     &trans       &trans       &trans       &trans   &trans &trans       &trans &trans
 			>;
 		};
 
