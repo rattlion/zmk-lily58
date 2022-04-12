@@ -38,6 +38,10 @@
     };
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS LSHIFT RSHIFT>
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
