@@ -28,18 +28,14 @@
 
 / {
     behaviors {
-        td_SHIFT: td_shift_caps {
+        td_CAPS: td_caps_lock {
             compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_CAPS";
+            label = "TAP_CAPS_LOCK";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&caps_word>;
+            tapping-term-ms = <500>;
+            bindings = <&kp RSHIFT>, <&kp CAPSLOCK>;
         };
     };
-};
-
-&caps_word {
-    continue-list = <UNDERSCORE MINUS LSHIFT RSHIFT>;
 };
 
 / {
@@ -56,7 +52,7 @@
 &kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0         &kp GRAVE
 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P          &kp BSLH
 &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI       &kp APOS
-&td_SHIFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &mt RCTRL FSLH &td_SHIFT
+&kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &mt RCTRL FSLH &td_CAPS
                         &kp LALT &kp LGUI &mo 1  &kp SPACE  &kp RET  &mo 2  &kp BSPC &kp RGUI
             >;
         };
