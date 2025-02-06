@@ -23,6 +23,11 @@
             key-positions = <52 55>;
             bindings = <&mo 3>;
         };
+        combo_capslock {
+            timeout-ms = <50>;
+            key-positions = <36 49>;
+            bindings = <&kp CAPSLOCK>;
+        };
     };
 };
 
