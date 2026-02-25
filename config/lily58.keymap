@@ -28,6 +28,11 @@
             key-positions = <36 49>;
             bindings = <&kp CAPSLOCK>;
         };
+        print_combo {
+            timeout-ms = <50>;
+            key-positions = <55 56 57>;
+            bindings = <&kp PRINTSCREEN>;
+        };
     };
 };
 
